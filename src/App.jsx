@@ -214,7 +214,7 @@ Generate a professional CMMC 2.0 Level 2 Gap Assessment Report with:
 Keep the tone direct and frank — this is a defense contractor audience, not a general SMB. Use CMMC/NIST 800-171 terminology correctly. Be specific, not generic.`;
 
     try {
-      const res = await fetch("https://api.anthropic.com/v1/messages", {
+      const res = await fetch("/api/generate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
